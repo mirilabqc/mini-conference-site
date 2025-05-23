@@ -1,0 +1,19 @@
+days:
+- name: Monday
+  abbr: Mo
+  date: 2030-01-01
+  rooms:
+  - name: Room A
+    talks:
+      - name: Talk 1
+        time_start: '12:00'
+        time_end: '12:45'
+      - name: Talk 2
+        time_start: '12:45'
+        time_end: '13:30'
+
+  - name: Room B
+    talks:
+      - name: Talk 3
+        time_start: '12:00'
+        time_end: '13:00'

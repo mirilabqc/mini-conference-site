@@ -34,6 +34,10 @@ github_username: jonbenfri
 
 conference:
   tz: "+05:00"
+  info_bars:
+    - title: Coming Soon
+      text: |
+        Mini Conference Site
 
 # Build settings
 # theme: minima
