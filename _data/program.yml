@@ -1,7 +1,7 @@
 days:
 - name: Monday
   abbr: Mo
-  date: 2020-01-31
+  date: 2025-06-01
   rooms:
   - name: Room A
     talks:
