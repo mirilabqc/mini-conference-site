@@ -3,7 +3,7 @@ preposition: at
 description: >-
   Optical Computing Conference 2025 in Flushing, New York
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://mirilabqc.github.io/" # the base hostname & protocol for your site, e.g. https://example.com
+url: "https://opticalcomputingconference.org/" # the base hostname & protocol for your site, e.g. https://example.com
 
 remote_theme: "DigitaleGesellschaft/jekyll-theme-conference@v3.6.1"
 
@@ -68,9 +68,9 @@ conference:
   # Navigation bar
   navigation:
     logo:
-      name: Digital Society Switzerland
+      name: Optical Computing Conference
       # img: ''
-      url: 'https://digitale-gesellschaft.ch/'
+      url: 'https://opticalcomputingconference.org'
     breakpoint: md
     links:
       - name: Program
@@ -113,15 +113,11 @@ conference:
 
   # Information boxes
   info_bars:
-    - title: Welcome to the Conference Theme for Jekyll!
+    - title: Welcome to the Optical Computing Conference!
       color: primary
       main_only: true
       text: |
-        The Theme was originally made for the [Winterkongress](https://www.digitale-gesellschaft.ch/kongress/), a yearly conference of the [Digital Society Switzerland](https://digitale-gesellschaft.ch/).
-
-        ---
-
-        See the [README](github.com/DigitaleGesellschaft/jekyll-theme-conference/) on the project's GitHub repository for further information on how to configure and adapt it to your needs.
+        The conference website is being updated.
     - text: This is just some random content for demonstration purposes.
       color: warning
       pages_only: true
@@ -144,10 +140,12 @@ conference:
   talks:
     # Talk categories
     main_categories:
-      - name: Cat A
+      - name: Photonic Integrated Circuits
         color: info
-      - name: Cat B
+      - name: Quantum Information Processing
         color: success
+      - name: Metamaterials
+        color: warning
 
     # Hide icons on talk overview page
     hide_icons: false
@@ -167,7 +165,7 @@ conference:
     # display it.
     map:
       # Initial map center point
-      home_coord: 47.37808, 8.53935
+      home_coord: 40.7350347213414, -73.82033094574881
       # Alternative map providers can be found on https://leaflet-extras.github.io/leaflet-providers/preview/
       # The following do match the Bootstrap design not too badly:
       #   - Thunderforest.Neighbourhood
