@@ -2,7 +2,7 @@ title: Optical Computing Conference 2025
 preposition: at
 description: >-
   Optical Computing Conference 2025 in Flushing, New York
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://mirilabqc.github.io/" # the base hostname & protocol for your site, e.g. https://example.com
 
 remote_theme: "DigitaleGesellschaft/jekyll-theme-conference@v3.6.1"
@@ -60,7 +60,7 @@ conference:
   lang: en
 
   # Timezone
-  tz: "+02:00"
+  tz: "+05:00"
 
   # Show theme errors:
   show_errors: True
