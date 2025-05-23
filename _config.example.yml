@@ -1,19 +1,16 @@
-title: Optical Computing Conference 2025
+title: Conference 2020
 preposition: at
 description: >-
-  Optical Computing Conference 2025 in Flushing, New York
+  Conference of a random organization on January 1st in Zurich, Switzerland
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://mirilabqc.github.io/" # the base hostname & protocol for your site, e.g. https://example.com
+url: "https://example.com" # the base hostname & protocol for your site, e.g. https://example.com
 
-remote_theme: "DigitaleGesellschaft/jekyll-theme-conference@v3.6.1"
+theme: jekyll-theme-conference
 
 # Build settings
 markdown: kramdown
 sass:
   style: compressed
-
-plugins:
-  - jekyll-include-cache
 
 # Additional exclude from processing
 exclude:
