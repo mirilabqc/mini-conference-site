@@ -1,6 +1,35 @@
 ---
 layout: home
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultricies interdum lacus quis gravida. Vestibulum eget arcu in dui facilisis luctus. Curabitur rhoncus nibh non neque viverra facilisis. Nam nec placerat augue, ut mollis ante. Morbi pulvinar iaculis felis eget pretium. Duis euismod, risus non placerat accumsan, mi nisl euismod nibh, quis finibus ante mauris eu odio.
-
-Nullam a nunc felis. Aenean nec metus sed elit feugiat elementum sed ut quam. Maecenas dignissim augue nec sollicitudin sagittis. Donec sagittis dolor non tincidunt eleifend. Donec vel nibh et leo pretium dignissim. Nulla vehicula arcu velit, ac facilisis turpis fermentum ac. Integer at tempus sem, in vehicula magna. Ut tempor est nec nisl imperdiet porttitor sit amet maximus massa.
+<div class="table">
+<table class="table-bordered table-hover">
+  <thead>
+    <tr>
+      <th>Speaker</th>
+      <th>Institute</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Andrea Alu</td>
+      <td>City University of New York</td>
+    </tr>
+    <tr>
+      <td>Claudio Conti</td>
+      <td>Uni Roma</td>
+    </tr>
+    <tr>
+      <td>Vinod Menon</td>
+      <td>City College of New York</td>
+    </tr>
+    <tr>
+      <td>Hakan Tureci</td>
+      <td>Princeton</td>
+    </tr>
+    <tr>
+      <td>Peter McMahon</td>
+      <td>Cornell</td>
+    </tr>
+  </tbody>
+</table>
+</div>

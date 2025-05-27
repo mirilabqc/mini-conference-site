@@ -1,5 +1,13 @@
 ---
-name: Room A
+name: Day 1
+hide: true
+live:
+    absolute_url: https://zoom.us
+links:
+    - name: Slides
+      file: slides.pdf
+    - name: Recording
+      video: https://youtube.com
 ---
 
-A short way description on how to find the room
+

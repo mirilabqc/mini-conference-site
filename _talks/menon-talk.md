@@ -1,9 +1,9 @@
 ---
-name: Eu Nisl Nunc Mi Ipsum Faucibus
+name: Photonics Talk 4
 speakers:
-  - The Anonymous
+  - Vinod Menon
 categories:
-  - Cat B
+  - Metamaterials
   - Talk
 ---
 

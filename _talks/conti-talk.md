@@ -1,12 +1,12 @@
 ---
-name: Arcu Non Odio
+name: Photonics Talk 3
 speakers:
-  - Alex Rosales
+  - Claudio Conti
 categories:
-  - Cat A
+  - Optical Computing
   - Talk
 links:
-  - name: Recodring
+  - name: Recording
     icon: video
     absolute_url: https://media.ccc.de/
   - name: Wikipedia

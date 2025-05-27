@@ -1,25 +1,24 @@
 days:
-- name: Monday
-  abbr: Mo
-  date: 2025-06-01
+- name: Thursday
+  abbr: Th
+  date: 2025-06-26
   rooms:
-  - name: Room A
+  - name: Room 1
     talks:
-      - name: Vim Impetus Placerat Cotidieque Ad
+      - name: Photonics Talk 1
         time_start: '12:00'
         time_end: '12:45'
-      - name: Condimentum Vitae Sapien Pellentesque
-        time_start: '12:45'
-        time_end: '13:30'
-
-  - name: Room B
+        pause: '15'
+      - name: Photonics Talk 2
+        time_start: '14:00'
+        time_end: '14:45'
+        pause: '15'
+- name: Friday
+  abbr: Fr
+  date: 2025-06-27
+  rooms:
+  - name: Room 1
     talks:
-      - name: Arcu Non Odio
+      - name: Photonics Talk 3
         time_start: '12:00'
-        time_end: '13:00'
-
-  - name: Room C
-    talks:
-      - name: Eu Nisl Nunc Mi Ipsum Faucibus
-        time_start: '13:30'
-        time_end: '14:30'
+        time_end: '12:45'

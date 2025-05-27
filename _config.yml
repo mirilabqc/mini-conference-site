@@ -1,7 +1,10 @@
-title: Optical Computing Conference 2025
+title: Emerging Directions in Optical Computing and Information Processing Conference
 preposition: at
-description: >-
-  Optical Computing Conference 2025 in Flushing, New York
+#description: >-
+description: >+
+  Emerging Directions in Optical Computing and Information Processing
+  June 26 and 27 2025
+  Virtual Conference
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://opticalcomputingconference.org/" # the base hostname & protocol for your site, e.g. https://example.com
 
@@ -68,25 +71,15 @@ conference:
   # Navigation bar
   navigation:
     logo:
-      name: Optical Computing Conference
+      name: EDOCIP
       # img: ''
       url: 'https://opticalcomputingconference.org'
     breakpoint: md
     links:
       - name: Program
         relative_url: /program/
-      - name: Talks
-        relative_url: /talks/
-      - name: Speakers
-        relative_url: /speakers/
-      - name: Location
-        relative_url: /location/
-      - name: Previous Editions
-        menu:
-          - name: 2025 (current)
-            disabled: true
-            # - name: 2025
-            #   relative_url: /2025/
+      - name: Registration
+        relative_url: /registration/
 
   # Link Preview for Sharing
   link_preview:
@@ -103,22 +96,21 @@ conference:
     links:
       - name: Program
         relative_url: /program/
-      - name: How to get there
-        relative_url: /location/
-      - name: Tickets
-        disabled: true
-        absolute_url: ''
+      - name: Registration
+        disabled: false
+        absolute_url: '/registration/'
 
   # Information boxes
   info_bars:
-    - title: Welcome to the Optical Computing Conference!
+    - title: Welcome to the Emerging Directions in Optical Computing and Information Processing Conference!
       color: primary
       main_only: true
-      text: |
-        The conference website is being updated.
-    - text: This is just some random content for demonstration purposes.
+      text: >+
+        Virtual Conference
+        June 25 and 26, 2025
+    - text: The conference website is being updated
       color: warning
-      pages_only: true
+      # pages_only: true
 
   # Live indications
   live:
@@ -138,6 +130,8 @@ conference:
   talks:
     # Talk categories
     main_categories:
+      - name: Optical Computing
+        color: dark
       - name: Photonic Integrated Circuits
         color: info
       - name: Quantum Information Processing
