@@ -2,7 +2,7 @@
 layout: home
 ---
 **Andrea Alu**
-(City University of New York)
+(Advanced Science Research Center - City University of New York)
 
 
 **Claudio Conti**
@@ -10,7 +10,7 @@ layout: home
 
 
 **Vinod Menon**
-(City College of New York)
+(City College - City University of New York)
 
 
 **Hakan Tureci**
