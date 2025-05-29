@@ -70,7 +70,7 @@ conference:
   # Navigation bar
   navigation:
     logo:
-      name: EDOCIP
+      name: OCC
       # img: ''
       url: 'https://opticalcomputingconference.org'
     breakpoint: md
