@@ -1,29 +1,35 @@
 ---
 layout: home
 ---
-**Andrea Alu**
+
+**Speakers**
+
+[Andrea Alu](/speakers/andrea-alu/)
 (Advanced Science Research Center - City University of New York)
 
-**Claudio Conti**
+[Claudio Conti](/speakers/claudio-conti/)
 (Uni Roma)
 
-**Vinod Menon**
+[Vinod Menon](/speakers/vinod-menon/)
 (City College - City University of New York)
 
-**Hakan Tureci**
+[Hakan Tureci](/speakers/hakan-tureci/)
 (Princeton)
 
-**Peter McMahon**
+[Peter McMahon](/speakers/peter-mcmahon/)
 (Cornell)
 
-**Sachin Vaidya**
+[Sachin Vaidya](/speakers/sachin-vaidya/)
 (MIT)
 
-**Nader Engheta**
+[Nader Engheta](/speakers/nader-engheta/)
 (University of Pennsylvania)
 
-**Daniel Brunner**
+[Daniel Brunner](/speakers/daniel-brunner/)
 (CNRS, France)
 
-**Yong Meng Sua**
+[Yong Meng Sua](/speakers/yong-meng-sua/)
 (Stevens Institute)
+
+[Eli Yablonovitch](/speakers/eli-yablonovitch/)
+(UC Berkeley)
