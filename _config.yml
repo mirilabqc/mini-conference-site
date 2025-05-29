@@ -2,8 +2,8 @@ title: Emerging Directions in Optical Computing and Information Processing Confe
 preposition: at
 #description: >-
 description: >+
-  June 26 and 27 2025
-  Virtual Conference
+  June 26 and 27, 2025  
+  (Virtual Conference)
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://opticalcomputingconference.org/" # the base hostname & protocol for your site, e.g. https://example.com
 
@@ -101,14 +101,14 @@ conference:
 
   # Information boxes
   info_bars:
-    - title: Welcome to the Emerging Directions in Optical Computing and Information Processing Conference!
-      color: primary
-      main_only: true
-      text: >+
-        June 25 and 26, 2025
-        Virtual Conference
+#    - title: Welcome to the Emerging Directions in Optical Computing and Information Processing Conference!
+#      color: primary
+#      main_only: true
+#      text: >+
+#        June 26 and 27, 2025
+#        Virtual Conference
     - text: The conference website is being updated
-      color: warning
+      color: primary
       # pages_only: true
 
   # Live indications
