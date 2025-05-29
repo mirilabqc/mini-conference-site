@@ -96,8 +96,7 @@ conference:
       - name: Program
         relative_url: /program/
       - name: Registration
-        disabled: false
-        absolute_url: '/registration/'
+        relative_url: /registration/
 
   # Information boxes
   info_bars:
