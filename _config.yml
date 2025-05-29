@@ -78,7 +78,7 @@ conference:
       - name: Program
         relative_url: /program/
       - name: Registration
-        relative_url: /registration/
+        absolute_url: /registration/
 
   # Link Preview for Sharing
   link_preview:
