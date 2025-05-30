@@ -2,9 +2,6 @@
 name: Claudio Conti
 first_name: Claudio
 last_name: Conti
-links:
-  - name: Profile
-    absolute_url: https://claudioconti.site.uniroma1.it/
+institute: Sapienza University of Rome
+hide: true
 ---
-
-Bio coming soon
