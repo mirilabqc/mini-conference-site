@@ -19,6 +19,23 @@
 
     <hr class="my-4">
 
+    {% comment %}
+    {% Speaker list %}
+    {% endcomment %}
+    <div>
+      <strong>Speakers</strong>
+        <div>
+        {% assign speakers = site.speakers | sort_natural: 'last_name' %}
+        <ul>
+        {% for speaker in speakers %}
+            <li class="font-weight-light">
+                {{ speaker.name }}, {{ speaker.institute}}
+            </li>
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+
     {{ content }}
 
     {% if site.conference.main.links %}
