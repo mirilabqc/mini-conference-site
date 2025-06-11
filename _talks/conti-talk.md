@@ -1,7 +1,5 @@
 ---
-name: Photonics Talk 3
-speakers:
-  - Claudio Conti
+name: Photonics Talk 2
 links:
   - name: Recording
     icon: video

@@ -1,6 +1,4 @@
 ---
-name: Photonics Talk 2
-speakers:
-  - Andrea Alu
+name: Photonics Talk 1
 hide: false
 ---
