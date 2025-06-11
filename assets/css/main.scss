@@ -33,19 +33,32 @@ div#day-content.tab-content td.alert {
 }
 
 ul#day-list a.active {
+  position: relative;
   color: white;
   background-color: #1e2123;
   border-color: white;
+}
+
+.table {
+  border: 1px solid white;
+  border-collapse: separate;
 }
 
 .table th {
   color: white;
   background-color: #1e2123;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  border-collapse: collapse;
+  border-bottom-width: 0px;
 }
 
-.table {
-  border-left: 2px;
-  border-color: white;
+#day-content .table thead th {
+  box-shadow: none;
+}
+
+.table td.alert {
+  border-right: 4px solid white;
 }
 
 hr {
