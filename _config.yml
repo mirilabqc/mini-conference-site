@@ -106,7 +106,7 @@ conference:
 #        June 26 and 27, 2025
 #        Virtual Conference
     - text: The conference website is being updated
-      color: primary
+      color: secondary
       # pages_only: true
 
   # Live indications
