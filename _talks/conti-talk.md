@@ -2,9 +2,6 @@
 name: Photonics Talk 3
 speakers:
   - Claudio Conti
-categories:
-  - Optical Computing
-  - Talk
 links:
   - name: Recording
     icon: video
