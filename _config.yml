@@ -129,12 +129,6 @@ conference:
     main_categories:
       - name: Optical Computing
         color: dark
-      - name: Photonic Integrated Circuits
-        color: info
-      - name: Quantum Information Processing
-        color: success
-      - name: Metamaterials
-        color: warning
 
     # Hide icons on talk overview page
     hide_icons: false
