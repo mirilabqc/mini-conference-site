@@ -85,11 +85,30 @@
               {%- assign current_hour = current_hour | modulo: 24 -%}
             {%- endif -%}
             {%- assign current_min = i | minus: 1 | times: site.conference.program.time_steps | plus: day_start_min | modulo: 60 -%}
-            {%- if current_min < 10 -%}
-              {%- assign current_time = current_hour | append: ':0' | append: current_min -%}
-            {%- else -%}
-              {%- assign current_time = current_hour | append: ':' | append: current_min -%}
+            {%- comment -%} convert 24 h to 12 h + AM/PM {%- endcomment -%}
+            {%- assign hr   = current_hour | plus: 0 -%}
+            {%- assign suffix = "AM" -%}
+            {%- if hr >= 12 -%}
+              {%- assign suffix = "PM" -%}
             {%- endif -%}
+
+            {%- comment -%} map 13→1, 0→12 {%- endcomment -%}
+            {%- if hr > 12 -%}
+              {%- assign hr = hr | minus: 12 -%}
+            {%- elsif hr == 0 -%}
+              {%- assign hr = 12 -%}
+            {%- endif -%}
+
+            {%- comment -%} always two-digit minutes {%- endcomment -%}
+            {%- if current_min < 10 -%}
+              {%- assign m_s = "0" | append: current_min -%}
+            {%- else -%}
+              {%- assign m_s = current_min -%}
+            {%- endif -%}
+
+            {%- comment -%} final display string {%- endcomment -%}
+            {%- assign current_time = hr | append: ":" | append: m_s | append: " " | append: suffix -%}
+
 
             <tr>
 
@@ -98,7 +117,7 @@
                   {{- current_time -}}
                 </th>
               {%- elsif site.conference.program.show_alltimes -%}
-                <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: {{ z-index-max }}">
+                <th scope="row" class="col-title text-center text-muted font-weight-normal" style="z-index: {{ z-index-max }}">
                   :{{ current_min }}
                 </th>
               {%- else -%}
