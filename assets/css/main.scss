@@ -72,3 +72,11 @@ hr {
 .table th.col-title {
   min-width: 100px;
 }
+
+table thead th.col-space {
+  border-right: 0px solid white;
+}
+
+#day-content .sticky-top table thead th.col-space + th {
+  border-left: none;
+}
