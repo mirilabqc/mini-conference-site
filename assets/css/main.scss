@@ -12,11 +12,12 @@ a.navbar-brand {
 
 body {
   background-color: black;
+  background-color: #1e2123;
   color: white;
 }
 
 div.jumbotron {
-  background-color: black;
+  background-color: #1e2123;
   color: white;
 
 }
@@ -27,6 +28,22 @@ div.jumbotron h1 {
 
 div#day-content.tab-content td.alert {
   color: white;
-  background-color: black;
+  background-color: #1e2123;
+  border-color: white;
+}
+
+ul#day-list a.active {
+  color: white;
+  background-color: #1e2123;
+  border-color: white;
+}
+
+.table th {
+  color: white;
+  background-color: #1e2123;
+}
+
+.table {
+  border-left: 2px;
   border-color: white;
 }
