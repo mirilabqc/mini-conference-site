@@ -8,6 +8,8 @@
     {%- endif -%}
   </h1>
 
+  <div class="container">
+
   {%- comment -%}
     Loop all talk pages (/_talks/*.md), sort alphabetically by talk.name,
     skip any with hide: true, then print name, speakers (+ institutions),
@@ -16,11 +18,13 @@
   {% assign talks = site.talks | sort: "name" %}
   {% for talk in talks %}
     {% unless talk.hide %}
+      <hr class="my-0">
+      <hr class="my-0">
+      <p class="my-4"></p>
       <section id="{{ talk.slug }}" class="mb-5">
         <h2>{{ talk.name }}</h2>
         {% if talk.speakers %}
-          <p class="text-muted">
-            <strong>Speakers:</strong>
+          <p>
             {% for sp in talk.speakers %}
               {%- comment -%}
                 Support two speaker-list formats:
@@ -37,12 +41,15 @@
           </p>
         {% endif %}
         <div class="abstract">
-          {{ talk.content | markdownify }}
+          {{ talk.abstract | markdownify }}
         </div>
       </section>
-      <hr/>
     {% endunless %}
   {% endfor %}
+      <hr class="my-0">
+      <hr class="my-0">
+
+  </div>
 
 {% include partials/footer.html %}
 
