@@ -19,12 +19,24 @@ body {
 div.jumbotron {
   background-color: #1e2123;
   color: white;
-
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 div.jumbotron h1 {
   font-size: 2.0rem;
 }
+
+div.container#site-description {
+  background-color: #1e2123;
+  color: white;
+
+}
+
+div.container#site-description h1 {
+  font-size: 2.0rem;
+}
+
 
 div#day-content.tab-content td.alert {
   color: white;

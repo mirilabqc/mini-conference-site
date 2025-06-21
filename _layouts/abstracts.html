@@ -1,7 +1,12 @@
 {% include partials/header.html %}
 
-<main class="container py-5">
-  <h1 class="mb-4">{{ page.title }}</h1>
+  <h1 class="display-5 {% if nbr_days > 1 -%} mb-2 {%- else -%} mb-4 {%- endif %} text-break">
+    {%- if page.title -%}
+      {{- page.title -}}
+    {%- else -%}
+      {{- site.data.lang[site.conference.lang].agenda.title | default: "Agenda" -}}
+    {%- endif -%}
+  </h1>
 
   {%- comment -%}
     Loop all talk pages (/_talks/*.md), sort alphabetically by talk.name,
@@ -38,7 +43,6 @@
       <hr/>
     {% endunless %}
   {% endfor %}
-</main>
 
 {% include partials/footer.html %}
 
