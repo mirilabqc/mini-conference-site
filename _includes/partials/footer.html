@@ -1,4 +1,9 @@
 
+  <div id="footer-logos" class="container">
+    <img src="{{ site.baseurl }}/assets/icons/CUNY_Logo_White_CMYK.svg" alt="NSF Logo" width="80">
+    <img src="{{ site.baseurl }}/assets/icons/NSF_logo.svg" alt="NSF Logo" width="120">
+  </div>
+
   </main>
   <footer class="container"></footer>
 
@@ -7,6 +12,7 @@
   {%- if site.conference.live.streaming.enable -%}
     {%- include partials/modal_live.html -%}
   {%- endif -%}
+
 
   <!-- Append build time to avoid caching of live program embedded in JavaScript file -->
   <script src="{{ site.baseurl }}/assets/js/main.js?t={{ site.time | date: "%s" }}"></script>
