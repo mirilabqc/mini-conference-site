@@ -1,0 +1,44 @@
+{% include partials/header.html %}
+
+<main class="container py-5">
+  <h1 class="mb-4">{{ page.title }}</h1>
+
+  {%- comment -%}
+    Loop all talk pages (/_talks/*.md), sort alphabetically by talk.name,
+    skip any with hide: true, then print name, speakers (+ institutions),
+    and finally the body of the talk page as its abstract.
+  {%- endcomment -%}
+  {% assign talks = site.talks | sort: "name" %}
+  {% for talk in talks %}
+    {% unless talk.hide %}
+      <section id="{{ talk.slug }}" class="mb-5">
+        <h2>{{ talk.name }}</h2>
+        {% if talk.speakers %}
+          <p class="text-muted">
+            <strong>Speakers:</strong>
+            {% for sp in talk.speakers %}
+              {%- comment -%}
+                Support two speaker-list formats:
+                1) a simple string: “Daniel Brunner”
+                2) an object: { name: “Daniel Brunner”, institution: “CNRS” }
+              {%- endcomment -%}
+              {% if sp.name %}
+                {{ sp.name }}{% if sp.institution %}, {{ sp.institution }}{% endif %}
+              {% else %}
+                {{ sp }}
+              {% endif %}
+              {% unless forloop.last %}; {% endunless %}
+            {% endfor %}
+          </p>
+        {% endif %}
+        <div class="abstract">
+          {{ talk.content | markdownify }}
+        </div>
+      </section>
+      <hr/>
+    {% endunless %}
+  {% endfor %}
+</main>
+
+{% include partials/footer.html %}
+
