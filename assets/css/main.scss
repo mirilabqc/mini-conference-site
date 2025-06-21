@@ -37,11 +37,18 @@ div.container#site-description h1 {
   font-size: 2.0rem;
 }
 
-
 div#day-content.tab-content td.alert {
   color: white;
   background-color: #1e2123;
   border-color: white;
+}
+
+.syncscroll[name="sync-table"] {
+  table {
+    // table-layout: fixed;  // make widths obey min-width
+    min-width: 375px;
+    width: 675px;
+  }
 }
 
 ul#day-list a.active {
@@ -91,4 +98,8 @@ table thead th.col-space {
 
 #day-content .sticky-top table thead th.col-space + th {
   border-left: none;
+}
+
+h2#abstract {
+ font-size: 1.5rem;
 }
