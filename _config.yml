@@ -77,6 +77,8 @@ conference:
     links:
       - name: Agenda
         relative_url: /agenda/
+      - name: Abstracts
+        relative_url: /abstracts/
       - name: Registration
         relative_url: /registration/
 
