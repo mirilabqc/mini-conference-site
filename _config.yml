@@ -98,16 +98,13 @@ conference:
     #     relative_url: /registration/
 
   # Information boxes
-  info_bars:
+# info_bars:
 #    - title: Welcome to the Emerging Directions in Optical Computing and Information Processing Conference!
 #      color: primary
 #      main_only: true
 #      text: >+
 #        June 26 and 27, 2025
 #        Virtual Conference
-    - text: The conference website is being updated
-      color: secondary
-      # pages_only: true
 
   # Live indications
   live:
@@ -127,7 +124,13 @@ conference:
   talks:
     # Talk categories
     main_categories:
-      - name: Optical Computing
+      - name: "Session 1 : 08:30 AM - 10:00 AM"
+        color: dark
+      - name: "Session 2 : 10:30 AM - 12:00 PM"
+        color: dark
+      - name: "Session 3: 01:00 PM - 02:30 PM"
+        color: dark
+      - name: "Session 4: 03:00 PM - 04:30 PM"
         color: dark
 
     # Hide icons on talk overview page
