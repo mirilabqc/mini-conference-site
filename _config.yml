@@ -164,7 +164,7 @@ conference:
 
 
   program:
-    # URL of program page
+    # URL of agenda page
     url: '/agenda'
 
     # Time steps in program table
