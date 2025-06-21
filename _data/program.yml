@@ -5,20 +5,83 @@ days:
   rooms:
   - name: Room 1
     talks:
-      - name: Photonics Talk 1
-        time_start: '12:00'
-        time_end: '12:45'
-        pause: '15'
-      - name: Photonics Talk 2
-        time_start: '14:00'
-        time_end: '14:45'
-        pause: '15'
+      # Session 1 : 08:30 AM - 10:00 AM
+      - name: "Model-Free End-to-End Training in Experiments of a Multimode Semiconductor Laser Network Comprising 10,000 Neurons"
+        category: "Session 1 : 08:30 AM - 10:00 AM"
+        time_start: '08:30'
+        time_end: '09:00'
+      - name: "Analog Information Processing with Programmable Photonic Circuits"
+        category: "Session 1 : 08:30 AM - 10:00 AM"
+        time_start: '09:00'
+        time_end: '09:30'
+      - name: "Spatial Ising Machines and High-Dimensional Computing"
+        category: "Session 1 : 08:30 AM - 10:00 AM"
+        time_start: '09:30'
+        time_end: '10:00'
+      # Session 2 : 10:30 AM - 12:00 PM
+      - name: "Energy Scaling of Optical Transformers"
+        category: "Session 2 : 10:30 AM - 12:00 PM"
+        time_start: '10:30'
+        time_end: '11:00'
+      - name: "TBA"
+        category: "Session 2 : 10:30 AM - 12:00 PM"
+        time_start: '11:00'
+        time_end: '11:30'
+      - name: "Photonic Computing with Metamaterials and Metasurfaces"
+        category: "Session 2 : 10:30 AM - 12:00 PM"
+        time_start: '11:30'
+        time_end: '12:00'
+      # Session 3: 01:00 PM - 02:30 PM
+      - name: "Reimagining Data Centers with Hyperspectral Compute-in-Memory: Integrating Optical Communication and Computing"
+        category: "Session 3: 01:00 PM - 02:30 PM"
+        time_start: '13:00'
+        time_end: '13:30'
+      - name: "Circuits That Solve Optimization Problems by Exploiting Physics Inequalities"
+        category: "Session 3: 01:00 PM - 02:30 PM"
+        time_start: '13:30'
+        time_end: '14:30'
+      # Session 4: 03:00 PM - 04:30 PM
+      - name: "Computing Using Exciton-Polaritons"
+        category: "Session 4: 03:00 PM - 04:30 PM"
+        time_start: '15:00'
+        time_end: '15:30'
+      - name: "Ultrafast Neuromorphic Computing with Optical Parametric Oscillators"
+        category: "Session 4: 03:00 PM - 04:30 PM"
+        time_start: '15:30'
+        time_end: '16:00'
+      - name: "HiLAB: A New Paradigm in Inverse Design of Large-scale Nanophotonic Devices"
+        category: "Session 4: 03:00 PM - 04:30 PM"
+        time_start: '16:00'
+        time_end: '16:30'
 - name: Friday
   abbr: Fr
   date: 2025-06-27
   rooms:
   - name: Room 1
     talks:
-      - name: Photonics Talk 3
-        time_start: '12:00'
-        time_end: '12:45'
+      # Session 1 : 08:30 AM - 10:00 AM
+      - name: "Open Quantum Systems as a Platform for Machine Learning"
+        category: "Session 1 : 08:30 AM - 10:00 AM"
+        time_start: '08:30'
+        time_end: '09:00'
+      - name: "Interpretable AI and Robotics for Physics"
+        category: "Session 1 : 08:30 AM - 10:00 AM"
+        time_start: '09:00'
+        time_end: '09:30'
+      - name: "Noise-robust Information Extraction from Optical Image Sensors using Eigentasks"
+        category: "Session 1 : 08:30 AM - 10:00 AM"
+        time_start: '09:30'
+        time_end: '10:00'
+      # Session 2 : 10:30 AM - 12:00 PM
+      - name: "Engineered Nonlocalities for Analog Optical Computing"
+        category: "Session 2 : 10:30 AM - 12:00 PM"
+        time_start: '10:30'
+        time_end: '11:00'
+      - name: "Entropy Computing: A Paradigm for Optimization in Open Photonic Systems"
+        category: "Session 2 : 10:30 AM - 12:00 PM"
+        time_start: '11:00'
+        time_end: '11:30'
+      - name: "Programming Light Diffraction for Information Processing and Computational Imaging"
+        category: "Session 2 : 10:30 AM - 12:00 PM"
+        time_start: '11:30'
+        time_end: '12:00'
