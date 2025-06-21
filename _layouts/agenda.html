@@ -60,6 +60,8 @@
       <table class="table mx-auto">
         <tbody>
           {%- include partials/get_day_time.html -%}
+          <!-- Start showing schedule on the hour -->
+          {% assign day_start_min = 0 %}
 
           {%- if day_end_day > day_start_day -%}
             {%- assign day_end_hour = day_end_day | minus: day_start_day | times: 24 | plus: day_end_hour -%}
