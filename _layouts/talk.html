@@ -28,6 +28,13 @@
     {% include partials/list_speakers.html %}
   </p>
 
+  <div class="abstract">
+    <h2 class="font-weight-light text-break">Abstract</h2>
+    <p class="mb-3 font-weight-light">
+      {{ talk.abstract | makdownify }}
+    </p>
+  </div>
+
   <div class="mb-3 p-0">
     {% for d in site.data.program.days -%}
       {%- include partials/get_day_hash.html -%}

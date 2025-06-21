@@ -1,36 +1,26 @@
 {% include partials/header.html %}
 
-  <h1 class="display-5 {% if nbr_days > 1 -%} mb-2 {%- else -%} mb-4 {%- endif %} text-break">
-    {%- if page.title -%}
-      {{- page.title -}}
-    {%- else -%}
-      {{- site.data.lang[site.conference.lang].agenda.title | default: "Agenda" -}}
-    {%- endif -%}
-  </h1>
+<h1 class="display-5 mb-4 text-break">
+  {{ page.title | default: "Abstracts" }}
+</h1>
 
-  <div class="container">
+<div class="container">
 
-  {%- comment -%}
-    Loop all talk pages (/_talks/*.md), sort alphabetically by talk.name,
-    skip any with hide: true, then print name, speakers (+ institutions),
-    and finally the body of the talk page as its abstract.
-  {%- endcomment -%}
   {% assign talks = site.talks | sort: "name" %}
   {% for talk in talks %}
     {% unless talk.hide %}
-      <hr class="my-0">
-      <hr class="my-0">
-      <p class="my-4"></p>
+      <hr class="my-4">
+
       <section id="{{ talk.slug }}" class="mb-5">
-        <h2>{{ talk.name }}</h2>
+        <h2>
+          <a href="{{ site.baseurl }}{{ talk.url }}">
+            {{ talk.name }}
+          </a>
+        </h2>
+
         {% if talk.speakers %}
-          <p>
+          <p class="mb-3 font-weight-light">
             {% for sp in talk.speakers %}
-              {%- comment -%}
-                Support two speaker-list formats:
-                1) a simple string: “Daniel Brunner”
-                2) an object: { name: “Daniel Brunner”, institution: “CNRS” }
-              {%- endcomment -%}
               {% if sp.name %}
                 {{ sp.name }}{% if sp.institution %}, {{ sp.institution }}{% endif %}
               {% else %}
@@ -40,16 +30,16 @@
             {% endfor %}
           </p>
         {% endif %}
-        <div class="abstract">
+
+        <div class="abstract mb-3">
           {{ talk.abstract | markdownify }}
         </div>
+
       </section>
     {% endunless %}
   {% endfor %}
-      <hr class="my-0">
-      <hr class="my-0">
 
-  </div>
+</div>
 
 {% include partials/footer.html %}
 
