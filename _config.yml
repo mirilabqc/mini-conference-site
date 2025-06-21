@@ -74,8 +74,8 @@ conference:
       url: 'https://opticalcomputingconference.org'
     breakpoint: md
     links:
-      - name: Program
-        relative_url: /program/
+      - name: Agenda
+        relative_url: /agenda/
       - name: Registration
         relative_url: /registration/
 
@@ -159,7 +159,7 @@ conference:
 
   program:
     # URL of program page
-    url: '/program'
+    url: '/agenda'
 
     # Time steps in program table
     time_steps: 15 # in minutes
