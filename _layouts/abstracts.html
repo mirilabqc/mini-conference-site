@@ -7,7 +7,6 @@
 <div class="container">
 
   {%- for d in site.data.program.days -%}
-    <h2 class="mt-5">{{ d.name }} — {{ d.date | date: "%A, %B %-e, %Y" }}</h2>
 
     {%- comment -%} Flatten all talks from all rooms for the day {%- endcomment -%}
     {% assign flat = "" | split: "" %}
