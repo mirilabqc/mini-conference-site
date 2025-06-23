@@ -6,8 +6,18 @@
 
 <div class="container">
 
-  {% assign talks = site.talks | sort: "time_start" | reverse %}
-  {% for talk in talks %}
+  {%- for d in site.data.program.days -%}
+  {%- comment -%} flatten and sort talks by start time {%- endcomment -%}
+    {% assign flat = "" | split: "" %}
+    {% for room in d.rooms %}
+      {% for t in room.talks %}
+        {% assign entry = t | merge: { "room": room.name } %}
+        {% assign flat = flat | push: entry %}
+      {% endfor %}
+    {% endfor %}
+    {% assign sorted = flat | sort: "time_start" %}
+  
+  {% for talk in sorted %}
     {% unless talk.hide %}
       <hr class="my-4">
 
@@ -38,6 +48,8 @@
       </section>
     {% endunless %}
   {% endfor %}
+
+  {%- endfor -%}
 
 </div>
 
