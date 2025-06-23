@@ -6,7 +6,7 @@
 
 <div class="container">
 
-  {% assign talks = site.talks | sort: "time_start" %}
+  {% assign talks = site.talks | sort: "time_start" | reverse %}
   {% for talk in talks %}
     {% unless talk.hide %}
       <hr class="my-4">
