@@ -14,7 +14,7 @@ days:
         category: "Session 1 : 08:30 AM - 10:00 AM"
         time_start: '09:00'
         time_end: '09:30'
-      - name: "Spatial Ising Machines and High-Dimensional Computing"
+      - name: "Engineered Nonlocalities for Analog Optical Computing"
         category: "Session 1 : 08:30 AM - 10:00 AM"
         time_start: '09:30'
         time_end: '10:00'
@@ -73,7 +73,7 @@ days:
         time_start: '09:30'
         time_end: '10:00'
       # Session 2 : 10:30 AM - 12:00 PM
-      - name: "Engineered Nonlocalities for Analog Optical Computing"
+      - name: "Spatial Ising Machines and High-Dimensional Computing"
         category: "Session 2 : 10:30 AM - 12:00 PM"
         time_start: '10:30'
         time_end: '11:00'
