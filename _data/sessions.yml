@@ -30,8 +30,8 @@
   time_start: "10:30"
   time_end:   "12:00"
   room: "Room 1"
-- name: "Session 3: 01:00 PM - 01:30 PM"
+- name: "Session 3: 01:00 PM - 02:00 PM"
   date: 2025-06-27
   time_start: "13:00"
-  time_end:   "13:30"
+  time_end:   "14:00"
   room: "Room 1"

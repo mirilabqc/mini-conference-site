@@ -72,3 +72,6 @@ days:
       - name: "Integrated photonic-electronic deep neural networks"
         time_start: '13:00'
         time_end: '13:30'
+      - name: "Solving computational problems with coupled lasers"
+        time_start: '13:30'
+        time_end: '14:00'
