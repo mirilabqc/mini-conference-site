@@ -37,6 +37,9 @@ collections:
   rooms:
     output: true
     permalink: /:collection/:title/
+  sessions:
+    output: false
+    permalink: /sessions/:name/
 
 defaults:
   - scope:
@@ -127,14 +130,8 @@ conference:
   talks:
     # Talk categories
     main_categories:
-      - name: "Session 1 : 08:30 AM - 10:00 AM"
-        color: dark
-      - name: "Session 2 : 10:30 AM - 12:00 PM"
-        color: dark
-      - name: "Session 3: 01:00 PM - 02:30 PM"
-        color: dark
-      - name: "Session 4: 03:00 PM - 04:30 PM"
-        color: dark
+     - name: "Category 1"
+       color: dark
 
     # Hide icons on talk overview page
     hide_icons: false
