@@ -30,7 +30,8 @@ jobs:
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
           gem install bundler
-          bundle install --path vendor/bundle
+          bundle config set path 'vendor/bundle'
+          bundle install
 
       - name: Build website
         run: |
