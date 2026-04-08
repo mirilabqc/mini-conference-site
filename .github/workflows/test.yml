@@ -1,41 +1,25 @@
+name: Test Jekyll Build
+
 on:
   pull_request:
     types: [opened, synchronize, reopened]
-
-name: Test Jekyll Build
 
 jobs:
   build:
     name: Generate Website
     runs-on: ubuntu-latest
-    steps:
 
+    steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           lfs: true
 
-
-      - name: Setup Ruby for use with actions
-        uses: actions/setup-ruby@v1
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.3'
-
-      - name: Cache
-        uses: actions/cache@v4
-        with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gem-ruby-3.3-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gem-ruby-3.3-
-
-      - name: Install Bundler and Jekyll
-        if: steps.cache.outputs.cache-hit != 'true'
-        run: |
-          gem install bundler
-          bundle config set path 'vendor/bundle'
-          bundle install
+          bundler-cache: true
 
       - name: Build website
-        run: |
-          bundle exec jekyll build -d _site/
+        run: bundle exec jekyll build -d _site/
